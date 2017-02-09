@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html ngApp="myApp">
+<html ngApp="BlocChat">
 <head lang="en">
     <meta charset="UTF-8">
     <title>Bloc Base Project</title>
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
+	<ui-view></ui-view>
     
     <!-- Angular -->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
@@ -25,6 +26,7 @@
 	  firebase.initializeApp(config);
 	</script>
 	<script src="/scripts/app.js"></script>
+	<script src="/scripts/controllers/HomeCtrl.js"></script>
     <script src="/scripts/Room.js"></script>
 </body>
 </html>
